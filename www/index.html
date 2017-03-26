@@ -24,6 +24,9 @@
 <head>
     <script src="https://use.fontawesome.com/a374699ce4.js"></script>
     <script type="text/javascript" src="js/Swipe-master/swipe.js"></script>
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -60,6 +63,7 @@
       <br class="clear" />
       <span></span>
     </div>
+    <div id="stickyalias"></div>
     <div id="container" class="swipe">
         <div class="swipe-wrap">
             <div id="new-uploads">
@@ -110,6 +114,22 @@ Nunc sit amet tempor lacus. Aliquam sed tristique quam. Praesent aliquet, ex ac 
             speed:300
 
         });
+        $(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('#main-menu').offset().top;
+ 
+        $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyHeaderTop ) {
+                        $('#main-menu').css({position: 'fixed', top: '0px'});
+                         $('#stickyalias').css('display', 'block');
+                       
+                } else {
+                        $('#main-menu').css({position: 'static', top: '0px'});
+                        $('#stickyalias').css('display', 'none');
+                     
+                }
+        });
+         });
     </script>
 </body>
 

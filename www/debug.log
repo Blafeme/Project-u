@@ -1,3 +1,6 @@
 [0319/220216:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Toegang geweigerd. (0x5)
 [0319/220216:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: De pipe is beëindigd. (0x6D)
 [0319/220216:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Toegang geweigerd. (0x5)
+[0321/183253:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Toegang geweigerd. (0x5)
+[0321/183253:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: De pipe is beëindigd. (0x6D)
+[0321/183253:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\settings.dat: Toegang geweigerd. (0x5)

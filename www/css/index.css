@@ -89,6 +89,9 @@ div{
 
 #main-menu{
     overflow: hidden;
+    width: 100%;
+    background: #ddd;
+    z-index: 1000;
 }
 
 #main-menu li{
