@@ -16,8 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+*, *:before, *:after{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */µ
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 
@@ -42,7 +43,6 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
     height:100vh;
 }
@@ -100,7 +100,7 @@ div{
     padding: 5px 4.1%;
     text-align: center;
     float: left;
-    width:25%;
+    width: 33.33%;
     overflow: hidden;
 }
 
@@ -131,6 +131,91 @@ div{
 #container{
     min-height:66%;
 }
+
+#card-wrapper{
+    background: #fff;
+    border:none;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom:1px;
+}
+#card-wrapper div{
+    border:none;
+}
+
+#card-header{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#card-header span{
+    float: left;
+}
+
+#card-header h4{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    max-height: 2em;
+}
+
+#card-header h6{
+    font-weight: 400;
+    font-size: 10px;
+    color: #888;
+    margin:0;
+}
+
+#card-header li{
+    float:right;
+    font-size: 1.7em;
+    margin-right: 0.3em;
+}
+
+#card-image-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+#card-image-wrapper img{
+    max-width: 100%;
+}
+
+#card-interaction{
+    font-size: 3em;
+    overflow:hidden;
+}
+
+#card-interaction .fa-star{
+    color:rgb(249, 249, 71);
+    border: #dadada 0px solid;
+    border-radius: 80px;
+    padding:2px;
+    float:left;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    box-shadow: 4px 4px 5px #eee;
+}
+
+#card-interaction .fa-share-alt, #card-interaction .fa-flag{
+    font-size: 0.5em;
+    float:right;
+    border: #dadada 0px solid;
+    border-radius: 7px;
+    padding:2px 4px;
+    box-shadow: 2px 2px 5px #eee;
+}
+
+ #card-interaction .fa-flag{
+    margin-right:5px;
+    color:#ff2222;
+ }
+  #card-interaction .fa-share-alt{
+    color:#148614;
+  }
+
 
 .swipe {
   overflow: hidden;
